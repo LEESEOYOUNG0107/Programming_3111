@@ -13,7 +13,12 @@ const resultH1 = document.getElementById("result");
 //     resultH1.innerHTML = count; //증가한 숫자 화면에 표시
 // }; 
 
-function plus(){
-    count++;
+// function plus(number){
+//     count+=number;
+//     resultH1.innerHTML = count;
+// }
+const plus = (number) => {
+    count+=number;
     resultH1.innerHTML = count;
 }
+
