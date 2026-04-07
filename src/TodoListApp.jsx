@@ -1,23 +1,20 @@
+import "./todolist.css"
+
 export default function TodoListApp(){
     return(
-        <div className="">
-            <h1>ToDo List</h1>
-            <form>
-                <input type="text" placeholder="할 일을 입력하세요."/>
-                <button type="submit">Add</button>
-                <ul>
-                    <li>
-                        <input type="checkbox" name="" id="chk-1" />
-                        <label htmlFor="chk-1">놀기</label>
-                        <button>✏️</button>
-                        <button>❌</button>
+        <div className="todo">
+            <h1 className="todo__title">ToDo List</h1>
+            <form className="todo__form">
+                <input type="text" placeholder="할 일을 입력하세요." className="todo__input"/>
+                <button type="submit" className="todo__button todo__button--add">Add</button>
+                <ul className="todo__list">
+                    <li className="todo__item todo__item--complete">
+                        <input type="checkbox" name="" id="chk-1" className="todo__check"/>
+                        <label htmlFor="chk-1" className="todo__label">놀기</label>
+                        <button className="todo__button todo__button--edit">✏️</button>
+                        <button className="todo__button todo__button--delete">❌</button>
                     </li>
-                    <li>
-                        <input type="checkbox" name="" id="chk-2" />
-                        <label htmlFor="chk-2">집가기</label>
-                        <button>✏️</button>
-                        <button>❌</button>
-                    </li>
+
                 </ul>
             </form>
         </div>
