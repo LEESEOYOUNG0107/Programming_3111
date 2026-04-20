@@ -3,7 +3,7 @@ export default function Checkbox(props){
 
     return(
         <>
-            <input type="checkbox" name="" id={`chk-${id}`} className="todo__check"/>
+            <input type="checkbox" name="" id={`chk-${id}`} className="todo__check" {...rest}/>
             <label htmlFor={`chk-${id}`} className="todo__label">{children}</label>
         </>
         
