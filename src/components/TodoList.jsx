@@ -1,11 +1,17 @@
 import TodoItemEmpty from "./TodoItemEmpty"
 import TodoItem from "./TodoItem"
 
-export default function TodoList() {
+export default function TodoList({todos}) {
     return (
         <ul className="todo__list">
-            <TodoItemEmpty />
-            <TodoItem />
+            {/* todos에 todo없으면, TodoItemEmpty */}
+            {todos.lengh === 0 && <TodoItemEmpty />}
+
+            {/* todos에 todo있으면, TodoItem */}
+            {todos.length > 0 && 
+                todos.map(
+                    (todo) => < TodoItem key={todo.id} todo={todo}/>
+            )}
         </ul>
     )
 }
