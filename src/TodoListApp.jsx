@@ -19,11 +19,6 @@ export default function TodoListApp() {
         return savedTodos ? JSON.parse(savedTodos) : [];
 
     }
-    //LocalStorage에서 저장된 할일 목록 가져오자
-    const initTodos = () => {
-        const savedTodos = localStorage.getItem(TODOS_STORAGE_KEY);
-        return savedTodos ? JSON.parse(savedTodos) : [];
-    }
 
     const [todos, setTodos] = useState(initTodos); //할일 목록: 기본값 빈 리스트
 
