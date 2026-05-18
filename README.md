@@ -29,3 +29,15 @@ npm create vite@latest .
 - LocalStorage, `useEffect()`
 - `style={{}}'
 - HomeApp: page state가 home이면 `<ButtonPageApp/>`, counterapp이면 `<CounterApp/>`, todolistApp이면`<TodoListApp/>`
+
+- npm install react-router-dom
+- ```javascript
+    <BrowerRouter>
+        <Routes>
+            <Route path="/" element={}/>
+        </Routes>
+    </BrowerRouter>
+```
+- ```javascript
+    <Link to="/"></Link>
+```
